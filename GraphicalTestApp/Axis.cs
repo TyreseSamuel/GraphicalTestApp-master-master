@@ -35,7 +35,6 @@ namespace GraphicalTestApp
             //Rotates the Tank to the left (A)
             if (Input.IsKeyDown(65))
             {
-
                 Rotate(-1f * deltatime);
             }
         }
@@ -46,7 +45,6 @@ namespace GraphicalTestApp
             //Rotates the Tank to the right (D)
             if (Input.IsKeyDown(68))
             {
-
                 Rotate(1f * deltatime);
             }
         }

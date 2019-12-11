@@ -15,6 +15,9 @@ namespace GraphicalTestApp
             Actor root = new Actor();
             game.Root = root;
 
+            Axis derive = new Axis(640, 380);
+            root.AddChild(derive);
+
             game.Run();
         }
     }
