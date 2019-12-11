@@ -37,7 +37,7 @@ namespace GraphicalTestApp
         public float Y
         {
             //## Implement the relative Y coordinate ##//
-            get { return _localTransform.m13; }
+            get { return _localTransform.m23; }
             set { _localTransform.SetTranslation(X, value, 1); }
         }
         public float YAbsolute
@@ -50,6 +50,11 @@ namespace GraphicalTestApp
         {
             //## Implement getting the rotation of _localTransform ##//
             return (float)Math.Atan2(_localTransform.m21, _localTransform.m11);
+        }
+
+        public float GetRotationAbsolute()
+        {
+            return (float)Math.Atan2(_globalTransform.m21, _globalTransform.m11);
         }
 
         public void Rotate(float radians)

@@ -12,25 +12,25 @@ namespace GraphicalTestApp
         //Returns the Y coordinate at the top of the box
         public float Top
         {
-            get { return YAbsolute - Height/1; }
+            get { return YAbsolute - Height/2; }
         }
 
         //Returns the Y coordinate at the top of the box
         public float Bottom
         {
-            get { return YAbsolute + Height/1; }
+            get { return YAbsolute + Height/2; }
         }
 
         //Returns the X coordinate at the top of the box
         public float Left
         {
-            get { return XAbsolute - Width/1; }
+            get { return XAbsolute - Width/2; }
         }
 
         //Returns the X coordinate at the top of the box
         public float Right
         {
-            get { return XAbsolute + Width/1; }
+            get { return XAbsolute + Width/2; }
         }
 
         //Creates an AABB of the specifed size

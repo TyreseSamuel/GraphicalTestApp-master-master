@@ -17,7 +17,7 @@ namespace GraphicalTestApp
         public Game(int width, int height, string title)
         {
             RL.InitWindow(width, height, title);
-            RL.SetTargetFPS(15);
+            RL.SetTargetFPS(0);
         }
         
         //Run the game loop
